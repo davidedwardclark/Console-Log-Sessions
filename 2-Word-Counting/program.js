@@ -2,9 +2,9 @@
 
 var fs = require('fs');
 var filename = process.argv[2];
-var output = {};
 
 function countWordsInString(string) {
+	var output = {};
 	var arrayOfWords = string.split(" ");
 	arrayOfWords.forEach(function(element, index, array) {
 		if (output[element]) {
