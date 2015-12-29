@@ -1,5 +1,3 @@
-// Random Bag System
-
 var pieces = ['O', 'I', 'S', 'Z', 'L', 'J', 'T'];
 
 function getRandomNumberWithMax(max) {

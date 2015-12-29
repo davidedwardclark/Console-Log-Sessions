@@ -1,6 +1,3 @@
-// Word Counting
-// Fix: make all words lowercase. remove all punctuation, multi spaces and multi breaks.
-
 var fs = require('fs');
 var filename = process.argv[2];
 
