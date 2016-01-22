@@ -4,7 +4,6 @@ var filename = process.argv[2];
 function countWordsInString(string) {
 	var output = {};
 	var arrayOfWords = string.toLowerCase().replace(/[=-_"',;:.\]\[?!+$%()]/g," ").replace(/\s\s+/g," ").split(" ");
-	console.log(arrayOfWords.length);
 	arrayOfWords.forEach(function(element, index, array) {
 		if (output[element]) {
 			output[element] = output[element] + 1;
