@@ -19,7 +19,7 @@
 
 (function() {
 
-	"use strict";
+	'use strict';
 
 	var settingsOption = document.querySelector('.settings');
 
@@ -30,7 +30,7 @@
 	}, false);
 
 	function gameSetup(level) {
-		console.log("Difficulty level: ", level);
+		console.log('Difficulty level: ', level);
 	}
 
 	function changeScreen(screen) {
