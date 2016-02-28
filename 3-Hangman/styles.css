@@ -1,0 +1,154 @@
+/* GLOBAL */
+body {
+	font-family: "Helvetica Monospaced Std", monospace;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #F8E71C;
+	background-color: #000000;
+}
+img {
+	max-width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+
+/* LOGO */
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (min-width: 500px) {
+	#logo {
+		margin-top: 5.5%;
+		width: 95%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	#logo {
+		margin-top: 4.5%;
+		width: 75%;
+	}
+}
+@media screen and (min-width: 1500px) {
+	#logo {
+		margin-top: 3.5%;
+		width: 55%;
+	}
+}
+@media screen and (min-width: 2000px) {
+	#logo {
+		margin-top: 2.5%;
+		width: 35%;
+	}
+}
+
+
+/* SCREENS */
+#homescreen, #gamescreen {
+	display: none;
+}
+#homescreen.screen-on, #gamescreen.screen-on {
+	display: block;
+}
+
+
+/* HOME SCREEN */
+#homescreen .settings-title {
+	margin-top: 10%;
+	text-align: center;
+}
+#homescreen .settings {
+	width: 50%;
+	margin: 7.5% auto 0 auto;
+}
+#homescreen .settings div {
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+}
+@media screen and (min-width: 1000px) {
+	#homescreen .settings div {
+		float: left;
+		width: 33.333333333333333333%;
+		padding: 50px 0;
+	}
+}
+#homescreen .settings div:hover {
+	cursor: pointer;
+	background-color: #2E8DFB;
+}
+
+
+/* GAME SCREEN */
+#gamescreen .directions,
+#gamescreen .misses {
+	margin-top: 5%;
+	text-align: center;
+}
+#gamescreen .centerpiece {
+	width: 60%;
+	margin: 0 auto;
+}
+#gamescreen .hangman,
+#gamescreen .word {
+	float: left;
+}
+#gamescreen .hangman {
+	width: 25%;
+}
+#gamescreen .hangman img {
+	width: 50%;
+}
+#gamescreen .word {
+	width: 75%;
+	font-size: 100%;
+	padding-top: 10%;
+	word-wrap: break-word;
+}
+@media screen and (min-width: 500px) {
+	#gamescreen .word {
+		font-size: 100%;
+	}
+	.directions, .misses {
+		font-size: 60%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	#gamescreen .hangman img {
+		width: 60%;
+	}
+	#gamescreen .word {
+		font-size: 150%;
+	}
+	.directions, .misses {
+		font-size: 80%;
+	}
+}
+@media screen and (min-width: 1500px) {
+	#gamescreen .word {
+		font-size: 290%;
+	}
+	.directions, .misses {
+		font-size: 100%;
+	}
+}
+@media screen and (min-width: 2000px) {
+	#gamescreen .hangman img {
+		width: 70%;
+	}
+	#gamescreen .word {
+		font-size: 400%;
+	}
+}
+#gamescreen .word span {
+	text-decoration: underline;
+	margin-right: 30px;
+}
