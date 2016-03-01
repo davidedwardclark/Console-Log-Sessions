@@ -1,6 +1,11 @@
 /* GLOBAL */
+@font-face{
+	font-family:"Helvetica Monospaced W04 Rg";
+	src:url("fonts/d026af75-490c-46ed-8767-97abe6dffc30.eot?#iefix");
+	src:url("fonts/d026af75-490c-46ed-8767-97abe6dffc30.eot?#iefix") format("eot"),url("fonts/2da3f979-dca2-415b-a311-b5d0efc9bbc4.woff2") format("woff2"),url("fonts/1c246306-1da9-4f54-8bef-60ca35c1bfa7.woff") format("woff"),url("fonts/90fe9c58-72f6-4300-8fd8-846bfc690bc8.ttf") format("truetype"),url("fonts/4d711f34-f400-44c8-b32e-666693656a45.svg#4d711f34-f400-44c8-b32e-666693656a45") format("svg");
+}
 body {
-	font-family: "Helvetica Monospaced Std", monospace;
+	font-family: "Helvetica Monospaced W04 Rg", monospace;
 	font-size: 40px;
 	text-transform: uppercase;
 	color: #F8E71C;
@@ -88,7 +93,7 @@ img {
 
 
 /* GAME SCREEN */
-#gamescreen .directions,
+#gamescreen #directions,
 #gamescreen .misses {
 	margin-top: 5%;
 	text-align: center;
@@ -98,7 +103,7 @@ img {
 	margin: 0 auto;
 }
 #gamescreen .hangman,
-#gamescreen .word {
+#gamescreen #word {
 	float: left;
 }
 #gamescreen .hangman {
@@ -107,17 +112,17 @@ img {
 #gamescreen .hangman img {
 	width: 50%;
 }
-#gamescreen .word {
+#gamescreen #word {
 	width: 75%;
 	font-size: 100%;
 	padding-top: 10%;
 	word-wrap: break-word;
 }
 @media screen and (min-width: 500px) {
-	#gamescreen .word {
+	#gamescreen #word {
 		font-size: 100%;
 	}
-	.directions, .misses {
+	#directions, .misses {
 		font-size: 60%;
 	}
 }
@@ -125,18 +130,18 @@ img {
 	#gamescreen .hangman img {
 		width: 60%;
 	}
-	#gamescreen .word {
+	#gamescreen #word {
 		font-size: 150%;
 	}
-	.directions, .misses {
+	#directions, .misses {
 		font-size: 80%;
 	}
 }
 @media screen and (min-width: 1500px) {
-	#gamescreen .word {
+	#gamescreen #word {
 		font-size: 290%;
 	}
-	.directions, .misses {
+	#directions, .misses {
 		font-size: 100%;
 	}
 }
@@ -144,11 +149,11 @@ img {
 	#gamescreen .hangman img {
 		width: 70%;
 	}
-	#gamescreen .word {
+	#gamescreen #word {
 		font-size: 400%;
 	}
 }
-#gamescreen .word span {
+#gamescreen #word span {
 	text-decoration: underline;
 	margin-right: 30px;
 }
