@@ -25,6 +25,7 @@
 	var wordContainer = document.querySelector('#word');
 	var missesContainer = document.querySelector('#incorrectletters');
 	var directionsContainer = document.querySelector('#directions');
+	var hangman = document.querySelector('#hangman-image');
 	var gameStarted = false;
 	var word;
 	var wordArray;
@@ -32,7 +33,7 @@
 	var enteredUniqueLetters = [];
 	var enteredUniqueMatchingLetters = [];
 	var enteredNonMatchingLetters = [];
-	var guesses = 6;
+	var guesses = 0;
 	var lost = false;
 	var won = false;
 
@@ -118,13 +119,14 @@
 	}
 
 	function updateMissContainer() {
-		guesses = guesses - 1;
+		guesses = guesses + 1;
+		hangman.src = 'img/' + guesses + '.png';
 		var htmlSnippet = '';
 		for (var i = 0; i < enteredNonMatchingLetters.length; i++) {
-			htmlSnippet += enteredNonMatchingLetters[i] + ', ';
+			htmlSnippet = htmlSnippet + enteredNonMatchingLetters[i] + ', ';
 		}
-		missesContainer.innerHTML = htmlSnippet;
-		if (guesses === 0) {
+		missesContainer.innerHTML = htmlSnippet.replace(/,\s*$/, '');
+		if (guesses === 6) {
 			lost = true;
 			directionsContainer.innerHTML = "You lose";
 		}
