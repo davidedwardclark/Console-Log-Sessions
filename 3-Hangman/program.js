@@ -3,6 +3,8 @@
 	'use strict';
 
 	var settingsOption = document.querySelector('.settings');
+	var homescreen = document.querySelector('#homescreen');
+	var gamescreen = document.querySelector('#gamescreen');
 	var wordContainer = document.querySelector('#word');
 	var missesContainer = document.querySelector('#incorrectletters');
 	var directionsContainer = document.querySelector('#directions');
@@ -25,8 +27,6 @@
 	}, false);
 
 	function changeScreen(screen) {
-		var homescreen = document.querySelector('#homescreen');
-		var gamescreen = document.querySelector('#gamescreen');
 		if (screen === 'home') {
 			homescreen.className = 'screen-on';
 			gamescreen.className = '';
@@ -44,7 +44,6 @@
 
 	function gameSetup(level) {
 		word = pickWord(level);
-		console.log("the word:", word);
 		wordArray = word.split('');
 		wordLength = wordArray.length;
 		for (var i = 0; i < wordLength; i++) {
@@ -69,7 +68,7 @@
 					enteredUniqueLetters.push(letter);
 					if (wordArray.contains(letter)) {
 						for (var i = 0; i < wordLength; i++) {
-							if (letter === word.split('')[i]) {
+							if (letter === wordArray[i]) {
 								directionsContainer.innerHTML = "Nice one";
 								enteredUniqueMatchingLetters[i] = letter;
 								updateWordContainer();
@@ -90,7 +89,7 @@
 	function updateWordContainer() {
 		var htmlSnippet = '';
 		for (var i = 0; i < enteredUniqueMatchingLetters.length; i++) {
-			htmlSnippet += '<span>' + enteredUniqueMatchingLetters[i] + '</span>';
+			htmlSnippet = htmlSnippet + '<span>' + enteredUniqueMatchingLetters[i] + '</span>';
 		}
 		wordContainer.innerHTML = htmlSnippet;
 		if (!enteredUniqueMatchingLetters.contains('&nbsp;')) {
