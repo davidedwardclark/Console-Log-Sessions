@@ -14,6 +14,10 @@ irc.socket.setEncoding('utf8');
 irc.socket.setNoDelay();
 irc.socket.on('data', function(result) {
 	console.log(result)
+	var stringSplit = result.split(' ');
+	if (stringSplit[0] === 'PING') {
+		irc.raw('PONG ' + stringSplit[1]);
+	}
 });
 
 irc.raw = function (data) {
