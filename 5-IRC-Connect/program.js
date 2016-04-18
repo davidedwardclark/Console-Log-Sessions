@@ -1,3 +1,5 @@
+// http://webdevrefinery.com/forums/topic/8762-writing-a-very-simple-irc-bot-in-nodejs/
+
 var net = require('net');
 var irc = {};
 
