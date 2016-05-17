@@ -1,0 +1,17 @@
+{
+  "name": "date-correction",
+  "version": "1.0.0",
+  "description": "reddit programmer challenge",
+  "main": "program.js",
+  "dependencies": {
+    "fetch": "^1.0.1"
+  },
+  "devDependencies": {
+    "fetch": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Clark",
+  "license": "ISC"
+}
