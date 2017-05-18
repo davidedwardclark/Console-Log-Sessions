@@ -1,6 +1,6 @@
 # Console Log Sessions
 
-* [The Best Conjunction](https://www.reddit.com/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/?st=j0e9v37g&sh=dbcf6259
+* [The Best Conjunction](https://www.reddit.com/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/?st=j0e9v37g&sh=dbcf6259)
 * Presidents: https://www.reddit.com/r/dailyprogrammer/comments/49aatn/20160307_challenge_257_easy_in_what_year_were/
 * Date Correction:
 * IRC Connect: https://www.reddit.com/r/dailyprogrammer/comments/4ad23z/20160314_challenge_258_easy_irc_making_a/
