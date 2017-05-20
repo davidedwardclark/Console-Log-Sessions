@@ -1,0 +1,19 @@
+{
+    "name": "the-best-conjunction",
+    "version": "1.0.0",
+    "description": "reddit programmer challenge",
+    "main": "program.js",
+    "dependencies": {
+        "fetch": "^1.0.1",
+        "readline-sync": "1.4.7"
+    },
+    "devDependencies": {
+        "fetch": "^1.0.1",
+        "readline-sync": "1.4.7"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "David Clark",
+    "license": "ISC"
+}
