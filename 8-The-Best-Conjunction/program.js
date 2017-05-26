@@ -1,7 +1,6 @@
 var fetchUrl = require('fetch').fetchUrl;
 var readline = require('readline-sync');
 var url = 'http://www-personal.umich.edu/~jlawler/wordlist';
-//var input = readline.question('Please enter a word: ');
 var minSize = 3;
 var matchArray = [];
 var uniqueArray = [];
@@ -10,10 +9,9 @@ var masterArray = [];
 fetchUrl(url, function (error, meta, body) {
 
     var words = body.toString().split('\n');
-
-    for (var i = 0; i < words.length; i++) {
-        var input = words[i];
-
+    for (var h = 0; h < words.length; h++) {
+        var input = words[h];
+        input = input.replace(/(\r\n|\n|\r)/gm,"");
         for (var i = 0; i < words.length; i++) {
             var word = words[i];
             word = word.replace(/(\r\n|\n|\r)/gm,"");
@@ -29,10 +27,18 @@ fetchUrl(url, function (error, meta, body) {
         uniqueArray = matchArray.filter(function(item, pos, self) {
             return self.indexOf(item) == pos;
         });
-        masterArray.push(uniqueArray);
-
+        matchArray = [];
+        if (uniqueArray.length > 0) {
+            masterArray.push(uniqueArray);
+        }
+        uniqueArray = [];
     }
 
+    masterArray.sort(function (a, b) {
+        return a.length - b.length;
+    });
 
-    console.log(masterArray);
+    // Solution
+    console.log(masterArray[masterArray.length - 1]);
+
 });
