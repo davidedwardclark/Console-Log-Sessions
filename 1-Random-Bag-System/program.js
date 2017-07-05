@@ -5,28 +5,23 @@ function getRandomNumberWithMax(max) {
 }
 
 function getTetrominoPieces(numberOfPieces) {
-
+	
 	var output = '';
 
 	while (output.length < numberOfPieces) {
 
 		var newPieces = pieces.slice();
-
 		var i = 7;
+		
 		while (i >= 1) {
-
 			if (output.length === numberOfPieces) {
 				break;
 			}
-
 			var randomNumber = getRandomNumberWithMax(newPieces.length);
 			var piece = newPieces[randomNumber];
 			newPieces.splice(randomNumber, 1);
-
 			output = output + piece;
-
 			i--;
-
 		}
 
 	}
