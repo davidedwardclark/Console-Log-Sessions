@@ -1,6 +1,6 @@
 # Console Log Sessions
 
-* [Counting Elements](http://www.latimes.com/local/lanow/la-me-ln-santa-monica-airbnb-conviction-20160713-snap-story.html)
+* [Counting Elements](https://www.reddit.com/r/dailyprogrammer/comments/6eerfk/20170531_challenge_317_intermediate_counting/)
 * [The Best Conjunction](https://www.reddit.com/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/?st=j0e9v37g&sh=dbcf6259)
 * [Presidents](https://www.reddit.com/r/dailyprogrammer/comments/49aatn/20160307_challenge_257_easy_in_what_year_were/)
 * [Date Correction](https://www.reddit.com/r/dailyprogrammer/comments/2lvgz6/20141110_challenge_188_easy_yyyymmdd/)
