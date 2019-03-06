@@ -1,3 +1,4 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/4ad23z/20160314_challenge_258_easy_irc_making_a/
 // http://webdevrefinery.com/forums/topic/8762-writing-a-very-simple-irc-bot-in-nodejs/
 
 var net = require('net');

@@ -1,3 +1,5 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/5yaiin/20170308_challenge_305_intermediate_the_best/?st=j0e9v37g&sh=dbcf6259
+
 var fetchUrl = require('fetch').fetchUrl;
 var readline = require('readline-sync');
 var url = 'http://www-personal.umich.edu/~jlawler/wordlist';

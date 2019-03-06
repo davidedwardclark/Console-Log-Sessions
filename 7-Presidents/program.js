@@ -1,3 +1,5 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/49aatn/20160307_challenge_257_easy_in_what_year_were/
+
 var data = [
 	{'born': 1732, 'died': 1799},
 	{'born': 1735, 'died': 1826},

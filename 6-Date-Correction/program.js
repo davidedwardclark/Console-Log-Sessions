@@ -1,3 +1,5 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/2lvgz6/20141110_challenge_188_easy_yyyymmdd/
+
 var fetchUrl = require("fetch").fetchUrl;
 var url = 'http://tinyurl.com/hjwus8t';
 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];

@@ -1,3 +1,5 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/3ofsyb/20151012_challenge_236_easy_random_bag_system/
+
 var pieces = ['O', 'I', 'S', 'Z', 'L', 'J', 'T'];
 
 function getRandomNumberWithMax(max) {
@@ -5,14 +7,14 @@ function getRandomNumberWithMax(max) {
 }
 
 function getTetrominoPieces(numberOfPieces) {
-	
+
 	var output = '';
 
 	while (output.length < numberOfPieces) {
 
 		var newPieces = pieces.slice();
 		var i = 7;
-		
+
 		while (i >= 1) {
 			if (output.length === numberOfPieces) {
 				break;
