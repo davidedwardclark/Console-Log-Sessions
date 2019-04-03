@@ -23,7 +23,7 @@ var output = {};
 splitCapitalLettersOut.forEach(function(element) {
   var twoParts = element.split(/(?=[1-9])/);
   var first = twoParts.shift();
-  var second = parseInt(twoParts.join(''));
+  var second = parseInt(twoParts.join('')) || 1;
   output[first] = second;
 });
 
