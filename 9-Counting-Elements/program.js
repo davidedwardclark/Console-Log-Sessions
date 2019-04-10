@@ -1,57 +1,42 @@
 // https://www.reddit.com/r/dailyprogrammer/comments/6eerfk/20170531_challenge_317_intermediate_counting/
 
-var input1 = 'C6H12O6Na2';
-var input2 = 'CCl2F2';
-var input3 = 'NaHCO3';
+let input1 = 'C6H12O6Na2';
+let input2 = 'CCl2F2';
+let input3 = 'NaHCO3';
+let input4 = 'C4H8(OH)2';
+let input5 = 'PbCl(NH3)2(COOH)2';
 
-var input4 = 'C4H8(OH)2';
-var input5 = 'PbCl(NH3)2(COOH)2';
-console.log('Input: ', input1);
-
+console.log('Input: ', input5);
 
 /*
-When to Break
-Break on capital letter: CGyH = C Gy H
-Break on number: C6E2 = C6 E2
+Break on left brackets: PbCl(NH3)2 = PbCl NH3)2
+Break on capital letters: CGyH = C Gy H
+Break on numbers: C6E2 = C6 E2
 */
 
-var splitCapitalLettersOut = input1.split(/(?=[A-Z])/);
-console.log(splitCapitalLettersOut);
+let output = {};
 
-var output = {};
+let splitLeftBracketsOut = input5.split('(');
 
-splitCapitalLettersOut.forEach(function(element) {
-  var twoParts = element.split(/(?=[1-9])/);
-  var first = twoParts.shift();
-  var second = parseInt(twoParts.join('')) || 1;
-  output[first] = second;
+splitLeftBracketsOut.forEach(function(element) {
+  if (element.includes(')')) {
+    let splitRightBracketsOut = element.split(')');
+    let elements = splitRightBracketsOut[0];
+    var timesBy = splitRightBracketsOut[1];
+    splitCapitalLettersOut(elements, timesBy)
+  } else {
+    splitCapitalLettersOut(element);
+  }
 });
 
-console.log(output);
-
-
-// arrayOfCharacters.forEach(function(character) {
-//   if (!isNaN(character * 1)) {
-//     console.log('isNumber');
-//   } else {
-//     if (character == character.toUpperCase()) {
-//       console.log('isUpperCaseLetter');
-//     }
-//     if (character == character.toLowerCase()){
-//       console.log('isLowerCaseLetter');
-//     }
-//   }
-// });
-
-// var isUpperCaseLetter;
-// var isLowerCaseLetter;
-// var isNumber;
-
-
-
-var output = {
-  C: 6,
-  H: 12,
-  O: 6,
+function splitCapitalLettersOut(element, timesBy) {
+  let splitCapitalLettersOut = element.split(/(?=[A-Z])/);
+  splitCapitalLettersOut.forEach(function(element) {
+    let twoParts = element.split(/(?=[1-9])/);
+    let first = twoParts.shift();
+    let second = parseInt(twoParts.join('')) || 1;
+    output[first] = (output[first] || 0) + (second * (timesBy || 1));
+  });
 }
-//console.log('Output: ', output);
+
+console.log('Output: ', output);
