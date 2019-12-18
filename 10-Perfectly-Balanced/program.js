@@ -14,3 +14,9 @@ for (var i = 0; i < input.length; i++) {
 
 console.log(input);
 console.log(x_counter === y_counter);
+
+
+// Optional bonus
+// Given a string containing only lowercase letters, find whether every letter that appears in the string appears the same number of times. Don't forget to handle the empty string ("") correctly!
+// balanced_bonus("xxxyyyzzz") => true
+// balanced_bonus("abcdefghijklmnopqrstuvwxyz") => true
