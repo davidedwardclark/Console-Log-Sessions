@@ -1,0 +1,25 @@
+<!-- http-server -S -C cert.pem -o -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Going Offline</title>
+  <meta name="description" content="David Clark's portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Document Title</h1>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceworker.js');
+    }
+  </script>
+</body>
+</html>
