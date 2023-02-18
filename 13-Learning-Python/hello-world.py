@@ -102,6 +102,108 @@
 # array = string.split(",")
 # print(array)
 
+# User Input
+# user_input = input("Enter some text: ")
+# uppercase_it = user_input.upper()
+# print(uppercase_it)
+
+# Convert String to Integer
+# user_input = input("Enter a wholeinteger and I will convert it to a type number: ")
+# output = int(user_input)
+# print(output)
+# print(type(output))
+# print("see, it is true number")
+
+# Convert String to Floating Point
+# user_input = input("Enter a floating point number and I will convert it to a type number: ")
+# output = float(user_input)
+# print(output)
+# print(type(output))
+# print("see, it is true number")
+
+# Double a Number
+# user_input = input("Enter a number to be doubled: ")
+# output = float(user_input) * 2
+# print(output)
+
+# Convert a String to a Number
+# take_input = input("Here gimme a number and i convert to string mmkay: ")
+# output = str(take_input)
+# print(output)
+# print(type(output))
+# print("See it is string!")
+# print("haahhahaah see this number? -> " + str(34523423423423) + " ya, you do dont you hahahahaha")
+
+# f-strings
+# name = "David"
+# heads = 1
+# arms = 2
+# print(f"{name} has {heads} heads and {arms} arms")
+# print(f"if someone has {arms} arms and then you multiply that by 2 you get: {arms * 2}")
+
+# Find a String in a String
+# is case sensitive
+# only finds the first instance of a string that shows up multipel times
+# only accepts a string
+# input = "Hi my name is Billy"
+# print(input.find("name"))
+# print(input.find("blah"))
+
+# Replace
+# print("Hi my name is billy jean".replace("billy jean", "bobby conners"))
+
+# Numbers and Math
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
