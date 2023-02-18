@@ -41,9 +41,66 @@
 # print(string1[-1])
 
 # String Slicing
-# flavor = "apple pie"
-# print(flavor[3:])
+# [starting character : how many characters to include]
+# string2 = "apple pie"
+# print(string2[0:3])
+# If you omit the second index in the slice it defaults to the whole string..
+# string3 = "apple pie"
+# print(string3[3:])
+# If you omit the first index in a slice, Python assumes you want to start at index 0.
+# string4 = "apple pie"
+# print(string4[:4])
+# Negative values too.
+# string4 = "apple pie"
+# print(string4[-3:-1])
 
+# String Methods
+# string = "David Clark"
+# print(string.lower())
+# print(string.upper())
+# print(len(string))
+
+# Types
+# print(type(""))
+# print(type(4))
+# print(type({}))
+# print(type([]))
+
+# Remove Whitespace
+# .rstrip()
+# .lstrip()
+# .strip()
+# string = "   hahahahaahahaha   "
+# print(string.rstrip())
+# print(string.lstrip())
+# print(string.strip())
+
+# Starts With Ends With
+# Case sensitive!
+# .startswith()
+# .endswith()
+# string = "BLAH"
+# print(string.startswith("BL"))
+# print(string.endswith("H"))
+
+# Immutible
+# String in Pyton are immutible. So if we want to keep the manipulate string we need to store in in a value.
+# string = "chAnGe Me aNd StOrE me"
+# string2 = string.upper()
+# print("orignal: ", string)
+# print("modified with upper(): ", string2)
+
+# String Methods
+# https://docs.python.org/3/library/stdtypes.html#string-methods
+# string = "      "
+# print(string.isspace())
+# string1 = "asdfasdfasdf"
+# print(string1.isspace())
+
+# Strings and Arrays
+# string = "1,2,3"
+# array = string.split(",")
+# print(array)
 
 
 
