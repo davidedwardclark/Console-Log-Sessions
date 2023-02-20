@@ -474,8 +474,66 @@
 # }
 # print(states["Ontario"]["capital"])
 
+# OOP
 
+# class Dog:
+#
+#     species = "Canis familiaris"
+#
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def __str__(self):
+#         return f"{self.name} is {self.age} years old"
+#
+#     def speak(self, sound):
+#         return f"{self.name} goes {sound}"
+#
+#     def bark(self):
+#         return "Bark!"
+#
+# class Dachshund(Dog):  # This is how we make a sub class.
+#     def speak(self, sound="yabber yabber"):
+#         return f"{self.name} says {sound}"
+#
+# buddy = Dog("Buddy", 9)
+# carl = Dachshund("Carl", 12)
+# print(buddy)
+# print(carl)
+# print(carl.bark())
+# print(carl.speak())
+# print(buddy.speak("Woof Woof"))
 
+# Pass values in the function definition
+# def example(x = 5, y = 2):
+#     return x * y
+#
+# print(example())
+# import example_module
+# print(example_module.add(2, 2))
+
+# Import as other name
+# import example_module as math_module
+#
+# print(math_module.add(2, 2))
+
+# import as
+# from example_module import add
+# print(add(2, 2))
+
+# can subfolder modules but then must reference subfolder directory eg: mypackage
+
+# import mypackage.module1
+# import mypackage.module2
+# print(mypackage.module1.hello())
+# print(mypackage.module2.goodbye())
+
+# All the different import methods
+# import <package>
+# import <package> as <other_name>
+# from <package> import <module>
+# from <package> import <module> as <other_name>
 
 
 
