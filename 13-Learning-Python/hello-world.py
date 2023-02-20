@@ -153,9 +153,326 @@
 # print("Hi my name is billy jean".replace("billy jean", "bobby conners"))
 
 # Numbers and Math
+# combine an int and float and the result is a float
+# print(1 + 3.0)
+# print(1 - 3)
+# print(9 // 4)  # The // operator first divides the number on the left by the number on the right and then rounds down to an integer.
+# print(2 ** 2)  # Exponent.
+# print(20 % 7)  # Remainder after division.
+# print(0.1 + 0.2)
 
+# Math Functions
+# print(round(3.2))
+# print(round(3.223234,3))
+# print(abs(-3))
+# print(pow(2,3))
+# num = 3.0
+# print(num.is_integer())
 
+# Formating Numbers
+# num = 7.123
+# print(f"This is a number: {num:.2f}")
 
+# Functions
+# print(type(len))
+# len = "blahahahahahah"
+# print(len)
+# del(len)
+# print(len)
+# num_letters = len("four")
+# print(num_letters)
+
+# Write Own Function
+# First line of code in a function is called a function siganture.
+# Have to define function before you can use it!
+# When spacing inside the function have to use the same amount of space per inside line.
+# def multiply(x, y):
+#     product = x * y
+#     return product
+#
+# print(multiply(3, 2))
+
+# More Function
+# def greet(name):
+#     return f"Hello, my name is {name}."
+# print(greet("David"))
+# def convert_cel_to_far():
+#     celsius = input("Enter a temperature in celsius: ")
+#     F = float(celsius) * 9/5 + 32
+#     return F
+# print(convert_cel_to_far())
+
+# Loops
+# n = 1
+# while n < 5:
+#     print(n)
+#     n = n + 1
+
+# num = float(input("Enter a positive number: "))
+# while num <= 0:
+#     print("thats not a positive number!")
+#     num = float(input("Enter a positive number: "))
+
+# for blah in "python":
+#     print (blah)
+
+# word = "Python"
+# index = 0
+# while index < len(word):
+#     print(word[index])
+#     index = index + 1
+
+# print(range(3))
+#
+
+# for n in range(3,7):
+#     print(n * n)
+
+# amount = float(input("Enter an amount: "))
+# for num_people in range(2, 6):
+#     print(f"{num_people} people: ${amount / num_people:,.2f} each")
+
+# for n in range(1, 4):
+#     for j in range(4, 7):
+#         print(f"n = {n}, j = {j}")
+
+# Variable Scope
+# Local, Enclosing, Global, Built-in
+# x = "Hello World"
+# def func():
+#     x = 2
+#     print(f"inside func has the value: {x}")
+# func()
+# print(f"outside func has the value: {x}")
+
+# def outer_func():
+#     x = 2.5
+#     def inner_func():
+#         y = 4
+#         x = 55
+#         print(y)
+#         print(x)
+#     inner_func()
+# outer_func()
+
+# total = 0
+# def add_to_total(n):
+#     global total  # Access the global total
+#     total = total + n
+# add_to_total(5)
+# print(total)
+
+# More For Loops
+# fruits = ["bblah", "hah", "jah"]
+# for x in fruits:
+#     print(x)
+#     if x == "hah":
+#         break
+
+# fruits = ["bblah", "hah", "jah"]
+# for x in range(1, 11):
+#     print(x)
+
+# Conditionals F T W
+# on = False
+# if on:
+#     print("blah")
+
+# print("a" < "z")
+
+# And keyword
+# num = 3
+# num2 = 8
+# if num <= num2 and False:
+#     print("Is true")
+
+# Or keyword
+# num = 3
+# num2 = 8
+# if num <= num2 or False:
+#     print("Is true")
+
+# counter = 0
+# while counter < 10:
+#     counter = counter + 1
+#     if counter == 5:
+#         print("fivvveeeeeeeee")
+#     if not counter != 3:
+#         print("yess")
+#     print(counter);
+
+# print(True and not (1 != 1))
+# print(("A" != "A") or not (2 >= 3))
+
+# a = 1
+# b = 2
+# if a > b:
+#     print("a > b")
+# elif a == b:
+#     print("a == b")
+# else:
+#     print("a < b i guess sighhhhh")
+
+# if True == False:
+#     print("true")
+# else:
+#     print("i guess its false")
+
+# Program!
+# sport = input("Enter a sport: ")
+# p1_score = int(input("Enter player 1 score: "))
+# p2_score = int(input("Enter player 2 score: "))
+#
+# if sport.lower() == "basketball":
+#     if p1_score == p2_score:
+#         print("The game is a draw.")
+#     elif p1_score > p2_score:
+#         print("Player 1 wins.")
+#     else:
+#         print("Player 2 wins.")
+# elif sport.lower() == "golf":
+#     if p1_score == p2_score:
+#         print("The game is a draw.")
+#     elif p1_score < p2_score:
+#         print("Player 1 wins.")
+#     else:
+#         print("Player 2 wins.")
+# else:
+#     print("Unknown sport")
+
+# continue and break keywords
+
+# for i in range(0, 4):
+#     if i == 2:
+#         continue
+#     print(i)
+# print(f"Finished with i = {i}")
+#
+# for i in range(0, 4):
+#     if i == 2:
+#         break
+#     print(i)
+# print(f"Finished with i = {i}")
+
+# phrase = "it marks Xthe spot "
+# for character in phrase:
+#     if character == "X":
+#         break
+#     else:
+#         print("There was no 'X' in the phrase")
+
+# continue is kind of like skip
+# for n in range(0,10):
+#     if n == 5:
+#         continue
+#     print(n)
+
+# number = int(input("Enter an integer: "))
+
+# try:
+#     number = int(input("Enter an integer: "))
+# except ValueError:
+#     print("That was not an integer")
+
+# def divide(num1, num2):
+#     try:
+#         print(num1 / num2)
+#     except NameError:
+#         print("Both arguments must be numbers")
+#     except TypeError:
+#         print("Both arguments must be numbers")
+#     except ZeroDivisionError:
+#         print("num2 must not be 0")
+#     except:
+#         print("somedin else went wrong and i dont know what it was")
+#
+# divide(22, gg)
+
+# random package
+# import random
+# print(random.randint(1, 10))
+
+# my_first_tuple = (1, 2, 3)
+# print(my_first_tuple)
+# x = (1,)
+# print(x)
+# y = tuple("Python")
+# print(y)
+# print(len(y))
+
+# vowels = ("a", "e", "i", "o", "u")
+# for vowel in vowels:
+#     print(vowel.upper())
+
+# coordinates = 3.23, 3.234
+# print(coordinates)
+
+# groceries = "eggs, milk, meat"
+# grocery_list = groceries.split(", ")
+# print(grocery_list)
+
+# numbers = [1, 2, 3, 4]
+# numbers.insert(0, 0)
+# print(numbers)
+
+# colors = ["red", "yellow", "green", "blue", "orange"]
+# print(colors)
+# print(colors.pop())
+# colors.append("grey")
+# print(colors)
+# colors.extend(["violet", "ultraviolet"])
+# print(colors)
+# colors.insert(len(colors), "pink")
+# print(colors)
+
+# nums = [1, 2, 3, 4, 5]
+# total = 0
+# for number in nums:
+#     total = total + number
+# print(total)
+# print(sum(nums))
+# print(min(nums))
+# print(max(nums))
+
+# Sorting
+# list_of_nums = [1, 7, 2, 3, 5]
+# list_of_nums.sort()
+# print(list_of_nums)
+#
+# list_of_letters = ["z", "a", "w", "s"]
+# list_of_letters.sort()
+# print(list_of_letters)
+
+# Dictionaries
+# capitals = {
+#     "California": "Sacramento",
+#     "British Columbia": "Victoria",
+#     "Texas": "Austin",
+# }
+# capitals["Colorado"] = "Denver"
+# print(capitals)
+# del capitals["Texas"]
+# print(capitals)
+
+# states = {
+#     "California": {
+#         "capital": "Sacramento",
+#         "flower": "rose"
+#     },
+#     "British Columbia": {
+#         "capital": "Victoria",
+#         "flower": "grass"
+#     },
+#     "Ontario": {
+#         "capital": "Ottawa",
+#         "flower": "prickle bush"
+#     },
+#     "Texas": {
+#         "capital": "Austin",
+#         "flower": "lily"
+#     }
+# }
+# print(states["Ontario"]["capital"])
 
 
 
