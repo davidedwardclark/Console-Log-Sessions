@@ -535,8 +535,155 @@
 # from <package> import <module>
 # from <package> import <module> as <other_name>
 
+# Pathing
+# import pathlib
 
+# print(pathlib.Path.home())  # Current users home directory
+# print(pathlib.Path.cwd())  # Current Working Directory
 
+# path = pathlib.Path("/Users/dclark/Projects/Console-Log-Sessions/13-Learning-Python/")
+# print(path)
+# print(path.parent)  # Show parent directory
+# print(path.anchor)  # Show
+# path2 = pathlib.Path.home() / "hello.txt"
+# print(path2)
+# print(path2.stem)
+# print(path2.suffix)
+# print(path.is_absolute())  # Check if path is absolute aka starts swith slash
+# print(list(path.parents))
+#
+# for directory in path.parents:
+#     print(directory)
+
+# Making new directories
+
+# from pathlib import Path
+#
+# new_dir = Path.cwd() / "new_directory"
+# new_dir.mkdir()
+# print(new_dir.exists())
+# my_dir = Path.cwd() / "some_random_dir"
+# my_dir.mkdir(exist_ok=True)  # exist_ok=True tells it only to make a directory if it doesn't exist already. If it does exist then it won't do anything.
+
+# Making sub directories
+# from pathlib import Path
+
+# new_dir = Path.cwd() / "new_directory" / "sub_directory"
+# file_path = Path.cwd() / "new_directory" / "sub_directory" / "blah.txt"
+# new_dir.mkdir(parents=True, exist_ok=True)  # parents=True will make any necessary parent directories first before making the target directory
+# file_path.touch()  # Make a file! Just like in unix :D
+
+# The Path.iterdir() method returns an iterator over Path objects represent- ing each item in the directory.
+# for path in Path.cwd().iterdir():
+#     print(path)
+
+# Like .iterdir(), the .glob() method returns an iterable of paths, but this time only paths that match the pattern "*.txt" are returned. .glob() returns only paths that are directly contained in the folder on which it is called.
+# for path in Path.cwd().glob("*.py"):
+#     print(path)
+
+# new_dir = Path.cwd()
+#
+# paths = [
+#     new_dir / "program1.py",
+#     new_dir / "program2.py",
+#     new_dir / "folder_a" / "program3.py",
+#     new_dir / "folder_a" / "folder_b" / "image1.jpg",
+#     new_dir / "folder_a" / "folder_b" / "image2.png",
+# ]
+#
+# for path in paths:
+#     path.touch()
+
+# new_dir = Path.cwd() / "new_directory"
+# new_dir.mkdir()
+# new_dir.rmdir()  # delete a directory
+
+# from pathlib import Path
+
+# my_path = Path.cwd() / "hello.txt"
+# my_path.touch()
+# file = my_path.open(mode="r", encoding="utf-8")
+# print(file)
+
+# my_path = Path.cwd() / "hello.txt"
+
+# print the contents of the file
+# with my_path.open(mode="r", encoding="utf-8") as file:
+#     text = file.read()
+#     print(text)
+
+# print the contents of the file line by line
+# with my_path.open(mode="r", encoding="utf-8") as file:
+#     for line in file.readlines():
+#         print(line)
+
+# with my_path.open(mode="a", encoding="utf-8") as file:
+#     file.write("Hi, there!")
+
+# temperature_readings = [68, 65, 68, 70, 74, 72]
+#
+# from pathlib import Path
+# my_path = Path.cwd() / "hello.txt"
+#
+# my_path.touch()
+#
+# with my_path.open(mode="a", encoding="utf-8") as file:
+#     file.write(str(temperature_readings[0]))
+#     for temp in temperature_readings[1:]:
+#         file.write(f",{temp}")
+#
+# with my_path.open(mode="r", encoding="utf-8") as file:
+#     text = file.read()
+#
+# temperatures = text.split(",")
+# print(temperatures)
+
+# pip update
+# python3 -m pip install --upgrade pip
+
+# pip install <package name>
+# pip uninstall <package name>
+
+# sqlite3
+
+# import sqlite3
+#
+# connection = sqlite3.connect("test_database.db")
+# cursor = connection.cursor()
+# query = "SELECT datetime('now', 'localtime');"
+# cursor.execute(query)
+# print(cursor.fetchone()[0])
+# connection.close()
+
+# using the with statement
+
+# import sqlite3
+#
+# with sqlite3.connect("test_database.db") as connection:
+#     cursor = connection.cursor()
+#     query = "SELECT datetime('now', 'localtime');"
+#     time = cursor.execute(query).fetchone()[0]
+#
+# print(time)
+
+# import sqlite3
+#
+# connection = sqlite3.connect("test_database.db")
+# cursor = connection.cursor()
+# cursor.execute(
+#     """CREATE TABLE People(
+#            FirstName TEXT,
+#            LastName TEXT,
+# Age INT );"""
+# )
+# cursor.execute(
+#     """INSERT INTO People VALUES(
+#            'Ron',
+# 'Obvious',
+# 42 );"""
+# )
+# connection.commit()
+# connection.close()
 
 
 
